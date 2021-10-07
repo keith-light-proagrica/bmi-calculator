@@ -104,9 +104,12 @@ class Form extends Component {
 
   render() {
     const { height, weight, BMI, isHealthy, isHealthyText } = this.state;
-    
+
     return (
       <main className="container">
+        <header>
+          <h1>BMI calculator</h1>
+        </header>
         <form className="standard-form" onSubmit={this.handleSubmit}>
           <div className="form-body">
             <ul className="form-fields">
@@ -142,10 +145,10 @@ class Form extends Component {
           </div>
           <div className="form-footer">
             <div className="btn-row btn-row--end">
-              <button className="btn" type="reset" onClick={this.handleReset}>
+              <button className="btn btn--grey" type="reset" onClick={this.handleReset}>
                 Reset
               </button>
-              <button className="btn" type="submit">
+              <button className="btn btn--blue" type="submit">
                 Submit
               </button>
             </div>

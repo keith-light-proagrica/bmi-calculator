@@ -39,3 +39,10 @@ body {
   padding: 0;
   position: relative;
 }
+
+body {
+  &.user-is-clicking *:focus {
+    box-shadow: none;
+    outline: 0;
+  }
+}

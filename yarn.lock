@@ -9694,6 +9694,10 @@ relateurl@^0.2.7:
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
 
+"remove-focus-state@github:keefyhub/remove-focus-state":
+  version "1.0.0"
+  resolved "https://codeload.github.com/keefyhub/remove-focus-state/tar.gz/40dd22eaf9bab86b7bdef130b5972da543641906"
+
 remove-trailing-separator@^1.0.1:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/remove-trailing-separator/-/remove-trailing-separator-1.1.0.tgz#c24bce2a283adad5bc3f58e0d48249b92379d8ef"

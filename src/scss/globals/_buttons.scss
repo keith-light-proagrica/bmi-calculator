@@ -9,8 +9,40 @@
   line-height: 16px;
   outline: none;
   padding: 16px 23px;
+  position: relative;
   text-align: center;
   text-decoration: none;
+
+  &::after {
+    @include absolute-center(absolute);
+    background-color: black;
+    content: '';
+    height: calc(100% + 2px);
+    opacity: .3;
+    width: calc(100% + 2px);
+    transform: translate(-50%, -50%) scaleX(0);
+    transform-origin: 0 0;
+    transition: transform $default-transition-timing;
+  }
+
+  &:hover::after {
+    transform: translate(-50%, -50%) scaleX(1);
+  }
+
+  &--blue {
+    background-color: $blue-ribbon;
+    border-color: $blue-ribbon;
+    color: $white;
+
+    &:hover {
+
+    }
+  }
+
+  &--grey {
+    background-color: $athens-gray;
+    border-color: $athens-gray;
+  }
 }
 
 .btn-row {
