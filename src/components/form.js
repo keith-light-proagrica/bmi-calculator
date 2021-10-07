@@ -82,10 +82,10 @@ class Form extends Component {
     }
 
     // Convert to inches
-    // Formula	- divide the length value by 2.54
+    // Formula - divide the length value by 2.54
     const heightInches = height / 2.54;
     // Convert to lb
-    // Formula	- for an approximate result, multiply the mass value by 2.205
+    // Formula - for an approximate result, multiply the mass value by 2.205
     const weightPounds = weight * 2.205;
     // Work out BMI
     // Formula - weight (lb) / [height (in)]2 x 703
