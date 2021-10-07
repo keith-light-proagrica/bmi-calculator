@@ -1,0 +1,102 @@
+button,
+input,
+select,
+textarea {
+  border-radius: 0;
+  color: inherit;
+  font: inherit;
+  padding: 0;
+
+  &[readonly] {
+    cursor: not-allowed;
+  }
+}
+
+input[type="search"] {
+  appearance: none;
+}
+
+select {
+  background-color: transparent;
+  display: block;
+  height: 2.8rem;
+  line-height: 2.8rem;
+  width: 100%;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+abbr[title] {
+  border: none;
+  text-decoration: none;
+}
+
+.standard-form {
+  text-align: left;
+
+  button:not(.browser-default):not(.btn),
+  input:not([type="submit"]):not([type="checkbox"]):not([type="radio"]),
+  select,
+  textarea {
+    background-color: transparent;
+    border: 1px solid $black;
+    border-radius: 0;
+    color: $black;
+    font: inherit;
+    height: 2.8rem;
+    line-height: 2.8rem;
+    padding: 0 1rem;
+    width: 100%;
+  }
+
+  textarea {
+    display: block;
+    min-height: 8rem;
+  }
+
+  .form-fields {
+    @include list-reset();
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .label-container {
+    display: block;
+    font-size: 0.9rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .form-label {
+    text-transform: uppercase;
+  }
+
+  .label-description {
+    display: block;
+    font-size: 0.8rem;
+    font-style: normal;
+  }
+
+  .required {
+    color: $razzmatazz;
+    margin-left: 0.1rem;
+  }
+
+  .form-row {
+    margin: 0;
+    position: relative;
+    width: 100%;
+
+    .hide-label {
+      @include visually-hidden();
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+}

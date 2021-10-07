@@ -1,0 +1,49 @@
+.btn {
+  background-color: $white;
+  border: 1px solid $black;
+  color: $black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: $body-font-stack;
+  font-size: 16px;
+  line-height: 16px;
+  outline: none;
+  padding: 16px 23px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -12px;
+
+  > * {
+    margin-left: 12px;
+    margin-top: 12px;
+  }
+
+  &--align-items-center {
+    align-items: center;
+  }
+
+  &--center {
+    justify-content: center;
+  }
+
+  &--start {
+    justify-content: flex-start;
+  }
+
+  &--end {
+    justify-content: flex-end;
+  }
+
+  &--space-between {
+    justify-content: space-between;
+  }
+}
+
+.btn-link {
+  @include link-style();
+}

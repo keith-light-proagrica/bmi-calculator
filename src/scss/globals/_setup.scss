@@ -1,0 +1,41 @@
+* {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+
+  &,
+  &::before,
+  &::after {
+    box-sizing: border-box;
+  }
+
+  &::placeholder {
+    color: $black;
+    opacity: 0.3;
+    transition: color $default-transition-timing;
+  }
+
+  &:focus::placeholder {
+    color: transparent !important;
+  }
+
+  &:focus {
+    box-shadow: 0 0 2px 1px $black;
+    outline: none;
+  }
+
+  &::selection {
+    background: lighten($black, 30%);
+  }
+
+  &::-moz-selection {
+    background: lighten($black, 30%);
+  }
+}
+
+html,
+body {
+  @include fluid-type($min_width, $max_width, $min_font, $max_font);
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
